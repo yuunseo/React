@@ -13,11 +13,18 @@ export default function Hello() {
         console.log("Yunseo");
     }
 
+    function showText(e){
+        if(e.key === 'Enter'){
+            console.log(e.target.value);
+        };
+    }
+
     return(
         <div>
             <h1>Hello</h1>
             <button onClick={showName}>Show Name</button>
             <button onClick={()=>{console.log("21");}}>Show Age</button>
+            <input type="text" onKeyPress={showText}></input>
         </div>
         
     )
