@@ -1,19 +1,12 @@
 import './App.css';
+import Hello from './component/Hello';
+import Welcome from './component/Welcome';
 
 function App() {
-  const name = "Yunseo";
-  const naver = {
-    name:"네이버",
-    url:"https://naver.com",
-  };
-
-  return (
+    return (
     <div className="App">
-      <h1 style={
-        {color:"white",
-      backgroundColor:"black",}
-      }>Welcome,{name}</h1>
-      <a href={naver.url}>{naver.name}</a>
+      <Hello />
+      <Welcome />
     </div>
   );
 }
