@@ -1,3 +1,4 @@
+import './Hello.css'
 /*첫번재 방법
 const Hello=()=>{
     <p>Hello</p>;
@@ -9,9 +10,13 @@ export default Hello; */
 export default function Hello() {
 
     return(
-        <p style={
+        <div>
+            <p style={
             {color:'pink',
         marginBottom:"50px"}
         }>Hello</p>
+        <div className="box">Hello's color</div>
+        </div>
+        
     )
 } 
