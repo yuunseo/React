@@ -9,6 +9,9 @@ export default Hello; */
 export default function Hello() {
 
     return(
-        <p>Hello</p>
+        <p style={
+            {color:'pink',
+        marginBottom:"50px"}
+        }>Hello</p>
     )
 } 
