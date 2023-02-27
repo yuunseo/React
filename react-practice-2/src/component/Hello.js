@@ -1,4 +1,4 @@
-import './Hello.css'
+import styles from './Hello.module.css'
 /*첫번재 방법
 const Hello=()=>{
     <p>Hello</p>;
@@ -15,7 +15,7 @@ export default function Hello() {
             {color:'pink',
         marginBottom:"50px"}
         }>Hello</p>
-        <div className="box">Hello's color</div>
+        <div className={styles.box}>Hello's color</div>
         </div>
         
     )
