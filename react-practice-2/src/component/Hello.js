@@ -9,13 +9,15 @@ export default Hello; */
 //두번째 방법
 export default function Hello() {
 
+    function showName(){
+        console.log("Yunseo");
+    }
+
     return(
         <div>
-            <p style={
-            {color:'pink',
-        marginBottom:"50px"}
-        }>Hello</p>
-        <div className={styles.box}>Hello's color</div>
+            <h1>Hello</h1>
+            <button onClick={showName}>Show Name</button>
+            <button onClick={()=>{console.log("21");}}>Show Age</button>
         </div>
         
     )
